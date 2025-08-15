@@ -24,7 +24,11 @@ mkdir deps
 python3 -m pip install --target=deps -r requirements.txt
 
 
-PYTHONPATH=./deps python3 subscout.py --help
+chmod +x main.py
+
+./main.py --help
+./main.py acme.com --mode top10
+
 ```
 
 ## How it Works
