@@ -19,7 +19,7 @@
 ## Quick Start
 ```
 cd /SubScout
-pip install -r requirements.txt
+python3 -m pip install --user -r requirements.txt
 
 
 python subscout acme.com --mode ping
