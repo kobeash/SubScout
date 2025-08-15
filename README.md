@@ -18,12 +18,15 @@
 
 ## Quick Start
 ```
-pipx install subscout
-subscout acme.com --mode ping
-subscout acme.com --mode top10
-subscout acme.com --mode top100 --html dist/acme.html --csv dist/acme.csv --json dist/acme.json
-subscout acme.com --ports 80,443,8080,8443 --concurrency 300 --timeout 2.0
-subscout acme.com --mode top10 --resume
+cd /SubScout
+pip install -r requirements.txt
+
+
+python subscout acme.com --mode ping
+python subscout acme.com --mode top10
+python subscout acme.com --mode top100 --html dist/acme.html --csv dist/acme.csv --json dist/acme.json
+python subscout acme.com --ports 80,443,8080,8443 --concurrency 300 --timeout 2.0
+python subscout acme.com --mode top10 --resume
 ```
 
 ## How it Works
