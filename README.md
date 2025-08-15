@@ -24,11 +24,7 @@ mkdir deps
 python3 -m pip install --target=deps -r requirements.txt
 
 
-python subscout acme.com --mode ping
-python subscout acme.com --mode top10
-python subscout acme.com --mode top100 --html dist/acme.html --csv dist/acme.csv --json dist/acme.json
-python subscout acme.com --ports 80,443,8080,8443 --concurrency 300 --timeout 2.0
-python subscout acme.com --mode top10 --resume
+PYTHONPATH=./deps python3 subscout.py --help
 ```
 
 ## How it Works
